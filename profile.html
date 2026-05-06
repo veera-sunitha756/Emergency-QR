@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Emergency Details</h2>
+
+<div id="data"></div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  const user = JSON.parse(localStorage.getItem(id));
+
+  if(user){
+    document.getElementById("data").innerHTML =
+      "Name: " + user.name + "<br>" +
+      "Blood: " + user.blood + "<br>" +
+      "Contact: " + user.contact + "<br>" +
+      "Address: " + user.address;
+  } else {
+    document.getElementById("data").innerHTML = "No Data Found";
+  }
+</script>
+
+</body>
+</html>

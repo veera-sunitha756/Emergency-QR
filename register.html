@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- QR library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+
+<h2>Fill Your Details</h2>
+
+<input id="name" placeholder="Name"><br>
+<input id="blood" placeholder="Blood Group"><br>
+<input id="contact" placeholder="Emergency Contact"><br>
+<input id="address" placeholder="Address"><br>
+
+<button onclick="generateQR()">Generate QR</button>
+
+<canvas id="qr"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
