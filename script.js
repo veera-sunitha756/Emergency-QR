@@ -43,8 +43,8 @@ window.saveData = async function () {
     const id = docRef.id;
 
     /* 🚑 Emergency-QR Profile Link */
-   const link =
-`https://veera-sunitha756.github.io/Emergency-QR-System/profile.html?id=${id}`;
+    const link =
+      `https://veera-sunitha756.github.io/Emergency-QR-System/profile.html?id=${id}`;
 
     const canvas = document.getElementById("qr");
 
